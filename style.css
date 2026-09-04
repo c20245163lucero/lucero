@@ -47,40 +47,63 @@ form {
         flex-direction: column;
         gap: 15px;
     }
-}
 
-nav ul {
-    flex-direction: column;
-    text-align: center;
-}
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
 
-main {
-    padding: 15px;
-    margin: 10px;
-    gap: 20px;
-}
 
-main section {
-    flex: 1 1 100%;
-    min-width: 0;
-    padding: 25px;
-}
-
-h1 {
-    font-size: 75px;
-    color: red;
-}
-
-span {
-    color: green;
-}
-
-@media (max-width: 768px) {
-    h2{
-
-        font-size: 48px;
-        color: blue;
+    main {
+        padding: 15px;
+        margin: 10px;
+        gap: 20px;
 
     }
 
-}    
+    main section {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+
+    h1 {
+        font-size: 75px;
+        color: red;
+    }
+
+    span {
+        font-size: 75 px;
+        color: green;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 48px;
+        color: blue;
+    }
+}
+
+nav a {
+    transition: color 0.1s ease;
+}
+
+nav a:hover {
+    color: green;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 1s ease;
+
+
+}
+
+button:hover {
+    background-color: pink;
+    color: black;
+}
